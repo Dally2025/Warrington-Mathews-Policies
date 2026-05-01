@@ -12,7 +12,7 @@ const navLinks = [
 
 const openingHours = [
   { day: "Mon – Fri", hours: "9:00am – 5:30pm" },
-  { day: "Saturday",  hours: "9:00am – 1:00pm" },
+  { day: "Saturday",  hours: "Closed" },
   { day: "Sunday",    hours: "Closed" },
 ];
 
@@ -36,7 +36,7 @@ export function Layout({ children }: { children: ReactNode }) {
           </div>
           <div className="flex items-center gap-1.5">
             <Clock className="h-3 w-3" />
-            <span>Mon–Fri: 9am–5:30pm &nbsp;|&nbsp; Sat: 9am–1pm &nbsp;|&nbsp; Sun: Closed</span>
+            <span>Mon–Fri: 9:00am–5:30pm &nbsp;|&nbsp; Sat–Sun: Closed</span>
           </div>
         </div>
       </div>
