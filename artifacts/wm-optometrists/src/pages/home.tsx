@@ -169,6 +169,39 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Meet the Team */}
+      <section className="py-24 bg-background border-t border-border/40">
+        <div className="container px-4 md:px-8 mx-auto">
+          <div className="text-center mb-14">
+            <p className="text-sm font-semibold uppercase tracking-widest text-primary mb-3">Our People</p>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Meet the Team</h2>
+            <p className="mt-4 text-muted-foreground text-lg max-w-xl mx-auto">
+              Experienced, qualified, and committed to providing the highest standard of eye care.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <TeamCard
+              initials="CM"
+              name="Catherine Morgan-Thomas"
+              title="Practice Manager & Operational Director"
+              quals={[]}
+            />
+            <TeamCard
+              initials="IS"
+              name="Imran Shah"
+              title="Optometrist"
+              quals={["BSc(Hons)", "MCOptom"]}
+            />
+            <TeamCard
+              initials="UR"
+              name="Ubaidullah Razzaq"
+              title="Optometrist"
+              quals={["BSc(Hons)", "MCOptom", "ProfCert LV", "ProfCert Glauc"]}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Seiko Vision Specialist Banner */}
       <section className="py-16 bg-background border-t border-border/40">
         <div className="container px-4 md:px-8 mx-auto">
@@ -200,6 +233,40 @@ export default function Home() {
           </div>
         </div>
       </section>
+    </div>
+  );
+}
+
+function TeamCard({
+  initials,
+  name,
+  title,
+  quals,
+}: {
+  initials: string;
+  name: string;
+  title: string;
+  quals: string[];
+}) {
+  return (
+    <div className="flex flex-col items-center text-center p-8 rounded-2xl bg-card/50 border border-border/40 hover:border-primary/40 transition-colors">
+      <div className="h-20 w-20 rounded-full bg-primary/15 border-2 border-primary/30 flex items-center justify-center mb-5">
+        <span className="text-2xl font-bold text-primary">{initials}</span>
+      </div>
+      <h3 className="text-lg font-bold text-foreground leading-snug">{name}</h3>
+      <p className="text-sm text-muted-foreground mt-1 mb-4">{title}</p>
+      {quals.length > 0 && (
+        <div className="flex flex-wrap justify-center gap-2">
+          {quals.map((q) => (
+            <span
+              key={q}
+              className="text-xs font-medium bg-primary/10 text-primary border border-primary/20 px-2.5 py-1 rounded-full"
+            >
+              {q}
+            </span>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
