@@ -1,89 +1,89 @@
-import { Link } from "wouter";
-import { ChevronLeft } from "lucide-react";
-
 export default function ComplaintsPolicy() {
   return (
     <div className="container mx-auto px-4 md:px-8 py-12 md:py-20 max-w-4xl">
-      <Link href="/policies" className="inline-flex items-center text-primary hover:text-primary/80 font-medium mb-8 transition-colors">
-        <ChevronLeft className="h-4 w-4 mr-1" /> Back to Policies
-      </Link>
-      
-      <div className="prose prose-invert prose-lg max-w-none prose-headings:text-foreground prose-a:text-primary hover:prose-a:text-primary/80">
-        <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-8">Complaints Procedure</h1>
-        
-        <p className="text-muted-foreground lead">
-          At Warrington & Mathews Optometrists, we aim to provide the highest standard of care and service to all our patients. However, we acknowledge that there may be times when you feel this standard has not been met. We take all feedback and complaints seriously as they help us improve our practice.
-        </p>
-
-        <h2>1. How to Make a Complaint</h2>
-        <p>
-          If you are unhappy with any aspect of your care or service, we encourage you to let us know as soon as possible. Most issues can be resolved quickly and informally at the time they occur.
-        </p>
-        <p>If you wish to make a formal complaint, you can do so in the following ways:</p>
-        <ul>
-          <li><strong>In Person:</strong> Ask to speak with the Practice Manager or the senior optometrist on duty.</li>
-          <li><strong>By Telephone:</strong> Call us on <strong>01646 692784</strong> and ask to speak with the Practice Manager.</li>
-          <li><strong>In Writing:</strong> Address your letter to the Practice Manager at:
-            <br /><em>Warrington & Mathews Optometrists, 23 Hamilton Terrace, Milford Haven SA73 3JJ</em>
-          </li>
-        </ul>
-
-        <h2>2. Information We Need</h2>
-        <p>To help us investigate your complaint efficiently, please provide:</p>
-        <ul>
-          <li>Your full name, address, and date of birth.</li>
-          <li>A clear description of what happened, including dates and times if possible.</li>
-          <li>The names of any staff members involved (if known).</li>
-          <li>What you would like us to do to put things right.</li>
-        </ul>
-
-        <h2>3. Our Commitment to You</h2>
-        <p>When we receive a formal complaint, we promise to:</p>
-        <ul>
-          <li>Acknowledge receipt of your complaint within <strong>3 working days</strong>.</li>
-          <li>Conduct a thorough and fair investigation into the matters raised.</li>
-          <li>Provide a full, written response within <strong>28 working days</strong> of receiving your complaint. If the investigation is complex and requires more time, we will write to you to explain the delay and provide a revised timeframe.</li>
-          <li>Ensure that making a complaint will not negatively affect your future care at our practice.</li>
-        </ul>
-
-        <h2>4. The Role of the Practice Manager</h2>
-        <p>
-          The Practice Manager is responsible for ensuring that all complaints are handled properly according to this procedure. They will review clinical records, speak to the staff members involved, and may contact you to clarify details before formulating the final response.
-        </p>
-
-        <h2>5. Escalation Routes</h2>
-        <p>
-          If you are not satisfied with our response to your complaint, you have the right to escalate the matter to external regulatory or ombudsman services.
-        </p>
-        
-        <h3>For NHS Care and Services:</h3>
-        <p>
-          If your complaint relates to an NHS sight test or NHS-funded service, and you remain dissatisfied after our internal process, you can contact the Public Services Ombudsman for Wales:
-        </p>
-        <ul>
-          <li><strong>Website:</strong> <a href="https://www.ombudsman.wales" target="_blank" rel="noopener noreferrer">www.ombudsman.wales</a></li>
-          <li><strong>Phone:</strong> 0300 790 0203</li>
-        </ul>
-
-        <h3>For Private Care and Professional Conduct:</h3>
-        <p>
-          If your complaint relates to private services, spectacles, contact lenses, or if you have concerns about the professional fitness to practice of an optometrist or dispensing optician, you can contact the Optical Consumer Complaints Service (OCCS) or the General Optical Council (GOC):
-        </p>
-        <ul>
-          <li><strong>OCCS:</strong> <a href="https://www.opticalcomplaints.co.uk" target="_blank" rel="noopener noreferrer">www.opticalcomplaints.co.uk</a> | 0344 800 5071</li>
-          <li><strong>GOC:</strong> <a href="https://www.optical.org" target="_blank" rel="noopener noreferrer">www.optical.org</a> (for serious professional misconduct issues)</li>
-        </ul>
-
-        <h2>6. Patient Feedback</h2>
-        <p>
-          We do not just want to hear from you when things go wrong. Your general feedback, suggestions, and compliments are invaluable in helping us maintain our high standards.
-        </p>
-
-        <hr className="my-12 border-border/40" />
-        <p className="text-sm text-muted-foreground">
-          Last updated: January 2024
-        </p>
+      <div className="mb-10">
+        <p className="text-sm font-semibold uppercase tracking-widest text-primary mb-2">Legal</p>
+        <h1 className="text-4xl md:text-5xl font-bold tracking-tight">Complaints Procedure</h1>
+        <p className="mt-4 text-muted-foreground">Warrington-Mathews Limited — how to raise a concern or make a complaint</p>
       </div>
+
+      <div className="space-y-8">
+
+        <div className="p-5 rounded-xl bg-primary/5 border border-primary/20 text-sm text-muted-foreground leading-relaxed">
+          We take all complaints seriously and aim to resolve concerns quickly and fairly. This procedure explains how to raise a concern, what you can expect from us, and how to escalate a complaint if you remain dissatisfied.
+        </div>
+
+        <Section title="How to Raise a Concern or Make a Complaint">
+          <p>A concern or complaint may be made in person, in writing or by telephone. Complaints may also be made by a third party acting on behalf of the complainant, as long as they have the appropriate consent to do so.</p>
+          <p>Concerns should be raised with the branch manager. If the issue remains unresolved, the next step is to make a formal complaint. For ease of use, a template complaint form is included at the end of this procedure. You can also ask third party organisations like Citizens Advice to help you.</p>
+        </Section>
+
+        <Section title="Time Scales">
+          <p>You must raise the complaint within three months of the incident or, where a series of incidents have occurred, within three months of the last incident. We will consider complaints made outside of this time frame if exceptional circumstances apply.</p>
+        </Section>
+
+        <Section title="Resolving Complaints">
+          <p>At each stage in the procedure, Warrington-Mathews Limited wants to resolve the complaint. If appropriate, we will acknowledge that the complaint is upheld in whole or in part. In addition, we may offer one or more of the following:</p>
+          <ul>
+            <li>An explanation</li>
+            <li>An admission that the situation could have been handled differently or better</li>
+            <li>An assurance that we will try to ensure the event complained of will not recur</li>
+            <li>An explanation of the steps that have been or will be taken to help ensure it will not happen again, and an indication of the timescales within which any changes are made</li>
+            <li>An apology</li>
+          </ul>
+        </Section>
+
+        <Section title="Withdrawal of Complaint">
+          <p>If a complainant wants to withdraw their complaint, we will ask them to confirm this in writing.</p>
+        </Section>
+
+        <Section title="Stage 1 — Formal Complaint">
+          <p>Formal complaints must be made to the manager (unless they are about the manager), via the Company Director. This may be done in person, in writing (preferably on the Complaint Form), or by telephone.</p>
+          <p>The manager will record the date the complaint is received and will acknowledge receipt of the complaint in writing (either by letter or email) within 30 days.</p>
+          <p>Within the response, the manager will seek to clarify the nature of the complaint, ask what remains unresolved and what outcome the complainant would like to see. The manager can consider whether a face-to-face meeting is the most appropriate way of doing this.</p>
+          <p>During the investigation, the Manager (or investigator) will:</p>
+          <ul>
+            <li>If necessary, interview those involved in the matter and/or those complained of, allowing them to be accompanied if they wish</li>
+            <li>Keep a written record of any meetings/interviews in relation to the investigation</li>
+          </ul>
+          <p>At the conclusion of the investigation, the manager will provide a formal written response within 90 days of the date of receipt of the complaint. If the manager is unable to meet this deadline, they will provide the complainant with an updated and revised response date.</p>
+          <p>The response will detail any actions taken to investigate the complaint and provide a full explanation of the decision made and the reason(s) for it. Where appropriate, it will include details of actions Warrington-Mathews Limited will take to resolve the complaint.</p>
+        </Section>
+
+        <Section title="Stage 2 — Escalation">
+          <p>If the complainant is dissatisfied with the outcome of Stage 1 and wishes to take the matter further, they can escalate the complaint to:</p>
+          <div className="p-4 rounded-lg bg-card border border-border/50 space-y-1">
+            <p className="font-semibold text-foreground">Optical Consumer Complaints Service</p>
+            <p>Phone: <a href="tel:03448005071" className="text-primary hover:underline">0344 800 5071</a></p>
+          </div>
+        </Section>
+
+        <Section title="Complaint Form">
+          <p>To make a formal complaint, please complete the details below and submit in writing to:</p>
+          <div className="p-4 rounded-lg bg-card border border-border/50 space-y-1">
+            <p className="font-semibold text-foreground">Warrington-Mathews Limited</p>
+            <p>23 Hamilton Terrace, Milford Haven SA73 3JJ</p>
+            <p>Email: <a href="mailto:enquiries@warrington-mathews.co.uk" className="text-primary hover:underline">enquiries@warrington-mathews.co.uk</a></p>
+          </div>
+          <p className="text-sm mt-2">Your complaint form should include: your full name, address, contact phone number, email address; whether you are making the complaint on behalf of another person (if so, their name and your authority to act); date(s) of incident(s); a description of the complaint including dates, times, and names of any staff involved if known; what aspects of your concern remain unresolved; and what outcome you would like to see. Please attach any supporting evidence. Formal complaints must be made within three months of the incident or the last in a series of incidents.</p>
+        </Section>
+
+        <Section title="Contact">
+          <p>Warrington &amp; Mathews Limited, 23 Hamilton Terrace, Milford Haven SA73 3JJ</p>
+          <p>Phone: <a href="tel:01646692784" className="text-primary hover:underline">01646 692784</a></p>
+          <p>Email: <a href="mailto:enquiries@warrington-mathews.co.uk" className="text-primary hover:underline">enquiries@warrington-mathews.co.uk</a></p>
+        </Section>
+
+      </div>
+    </div>
+  );
+}
+
+function Section({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <div className="border-t border-border/40 pt-6">
+      <h2 className="text-xl font-semibold text-foreground mb-3">{title}</h2>
+      <div className="space-y-3 text-muted-foreground leading-relaxed text-[15px] [&_ul]:list-disc [&_ul]:pl-5 [&_ul]:space-y-1">{children}</div>
     </div>
   );
 }
