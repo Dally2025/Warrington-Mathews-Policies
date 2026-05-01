@@ -5,6 +5,11 @@ import { ArrowRight, Eye, BadgeCheck, Stethoscope, Microscope } from "lucide-rea
 import receptionImg from "@assets/467500249_122115435992418783_2053523533203437921_n_1777651245440.jpg";
 import directorsImg from "@assets/671121160_122150246420418783_5445328637121532383_n_1777651245451.jpg";
 import seikoImg from "@assets/467781250_122115434960418783_776563271077161462_n_1777651245443.jpg";
+import stepperLogo from "@assets/Untitled_design_(9)_1777669015538.jpg";
+import mintLogo from "@assets/Mint_Eyewear_(2)_1777669015539.jpg";
+import pepeLogo from "@assets/Untitled_design_(8)_1777669015544.jpg";
+import vogueLogo from "@assets/Untitled_design_(7)_1777669015551.jpg";
+import jensenLogo from "@assets/Untitled_design_(6)_1777669015559.jpg";
 
 export default function Home() {
   return (
@@ -199,6 +204,40 @@ export default function Home() {
               quals={["BSc(Hons)", "MCOptom", "ProfCert LV", "ProfCert Glauc"]}
             />
           </div>
+        </div>
+      </section>
+
+      {/* Brands We Stock */}
+      <section className="py-16 border-t border-border/40 bg-card/20">
+        <div className="container px-4 md:px-8 mx-auto">
+          <div className="text-center mb-10">
+            <p className="text-sm font-semibold uppercase tracking-widest text-primary mb-2">Our Frame Collections</p>
+            <h2 className="text-2xl md:text-3xl font-bold tracking-tight">Brands We Stock</h2>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 items-center max-w-4xl mx-auto">
+            {[
+              { src: stepperLogo, alt: "Stepper Eyewear" },
+              { src: mintLogo,    alt: "Mint Eyewear Limited" },
+              { src: pepeLogo,    alt: "Pepe Jeans London" },
+              { src: vogueLogo,   alt: "Vogue Eyewear" },
+              { src: jensenLogo,  alt: "Jensen Eyewear" },
+            ].map(({ src, alt }) => (
+              <div
+                key={alt}
+                className="rounded-xl overflow-hidden border border-border/30 shadow-md hover:border-primary/40 hover:shadow-primary/10 hover:shadow-lg transition-all"
+              >
+                <img
+                  src={src}
+                  alt={alt}
+                  className="w-full aspect-square object-cover"
+                  title={alt}
+                />
+              </div>
+            ))}
+          </div>
+          <p className="text-center text-sm text-muted-foreground mt-8">
+            Visit us in store to browse our full collection of frames, sunglasses and specialist lenses.
+          </p>
         </div>
       </section>
 
