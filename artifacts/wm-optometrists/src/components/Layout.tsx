@@ -1,6 +1,7 @@
 import { Link, useLocation } from "wouter";
 import { ReactNode, useState } from "react";
-import logoPath from "@assets/M-W_logo_RGB_1777650696700.jpg";
+import logoPath from "../assets/M-W_logo_RGB_1777650696700-C_2fNodA.jpg";
+import browserLogo from "../assets/browserlogo2.png";
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, Menu, X, Clock } from "lucide-react";
 

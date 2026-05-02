@@ -2,14 +2,15 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Eye, BadgeCheck, Stethoscope, Microscope } from "lucide-react";
-import receptionImg from "@assets/467500249_122115435992418783_2053523533203437921_n_1777651245440.jpg";
-import directorsImg from "@assets/671121160_122150246420418783_5445328637121532383_n_1777651245451.jpg";
-import seikoImg from "@assets/467781250_122115434960418783_776563271077161462_n_1777651245443.jpg";
-import stepperLogo from "@assets/Untitled_design_(9)_1777669015538.jpg";
-import mintLogo from "@assets/Mint_Eyewear_(2)_1777669015539.jpg";
-import pepeLogo from "@assets/Untitled_design_(8)_1777669015544.jpg";
-import vogueLogo from "@assets/Untitled_design_(7)_1777669015551.jpg";
-import jensenLogo from "@assets/Untitled_design_(6)_1777669015559.jpg";
+import receptionImg from "../assets/467500249_122115435992418783_2053523533203437921_n_1777651245440-Y4xnONgu.jpg";
+import directorsImg from "../assets/671121160_122150246420418783_5445328637121532383_n_1777651245451-B_XCGMpl.jpg";
+import seikoImg from "../assets/467781250_122115434960418783_776563271077161462_n_1777651245443-C-YZez-X.jpg";
+import stepperLogo from "../assets/Untitled_design_(9)_1777669015538-C12-d6Tj.jpg";
+import mintLogo from "../assets/Mint_Eyewear_(2)_1777669015539-CQACIKfi.jpg";
+import pepeLogo from "../assets/Untitled_design_(8)_1777669015544-BpZWjhrF.jpg";
+import vogueLogo from "../assets/Untitled_design_(7)_1777669015551-DZJ1AhhS.jpg";
+import jensenLogo from "../assets/Untitled_design_(6)_1777669015559-DYjHGXJG.jpg";
+import browserLogo from "../assets/browserlogo2.png";
 
 export default function Home() {
   return (

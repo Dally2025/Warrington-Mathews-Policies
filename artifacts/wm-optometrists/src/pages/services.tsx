@@ -4,12 +4,12 @@ import {
   Eye, BadgeCheck, Stethoscope, Microscope, ExternalLink,
   GlassesIcon, ScanEye, Star, Zap, Shield, Sun, Palette, Baby, Layers, Wrench, HeartHandshake, CheckCircle2
 } from "lucide-react";
-import octImg from "@assets/Tomografía_de_Coherencia_Óptica_(OCT)_1777651245450.jpg";
-import eyewear1 from "@assets/Screenshot_2026-05-01_16.28.14_1777651245430.png";
-import eyewear2 from "@assets/Screenshot_2026-05-01_16.26.51_1777651245432.png";
-import eyewear3 from "@assets/Screenshot_2026-05-01_16.26.25_1777651245434.png";
-import eyewear4 from "@assets/Screenshot_2026-05-01_16.25.00_1777651245435.png";
-import eyewear5 from "@assets/Screenshot_2026-05-01_16.15.08_1777651245437.png";
+import octImg from "../assets/Tomografía_de_Coherencia_Óptica_(OCT)_1777651245450-DdqAyBPn.jpg";
+import eyewear1 from "../assets/Screenshot_2026-05-01_16.28.14_1777651245430-CP9Zrf-n.png";
+import eyewear2 from "../assets/Screenshot_2026-05-01_16.26.51_1777651245432-Dw2fLMId.png";
+import eyewear3 from "../assets/Screenshot_2026-05-01_16.26.25_1777651245434-ChWcRvHm.png";
+import eyewear4 from "../assets/Screenshot_2026-05-01_16.25.00_1777651245435-DvEl3MIS.png";
+import eyewear5 from "../assets/Screenshot_2026-05-01_16.15.08_1777651245437-BhmoacP9.png";
 
 const BOOKABLE_SERVICES = [
   {

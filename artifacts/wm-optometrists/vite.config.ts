@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import path from "path";
-import { mockupPreviewPlugin } from "./mockupPreviewPlugin";
+// import { mockupPreviewPlugin } from "./mockupPreviewPlugin";
 
 const isDev = process.env.NODE_ENV === "development";
 let port = 3000;
@@ -22,7 +22,7 @@ const basePath = "/Warrington-Mathews-Policies/"; // For GitHub Pages
 export default defineConfig({
   base: basePath,
   plugins: [
-    mockupPreviewPlugin(),
+    // mockupPreviewPlugin(),
     react(),
     tailwindcss(),
   ],
